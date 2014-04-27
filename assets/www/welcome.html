@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exchange</title>
+        <link rel="stylesheet" type="text/css" href="css/welcome.css"/>
+        
+        <script type="text/javascript">
+            function callLoading() {
+                window.location = "index.html";
+            }
+        
+            function callSelectAccounts() {
+                window.location = "sendaccounts.html";
+            }
+        
+        </script>
+        
+    </head>
+    <body>
+        <div id="top-navigation">
+            <img class="up-arrow" onclick="callLoading()" src="img/up-arrow.svg" width="10%" align="center"/>
+        </div>
+        
+        <h1>Welcome!<br /><br />
+        What would you like to do?</h1>
+        
+        <div id="actions">
+            <img class="qrcode" onclick="startScan()" src="img/qrcode.svg" width="45%" />
+            <img class="send" onclick="callSelectAccounts()" src="img/send.svg" width="45%" />
+
+        </div>
+        
+        <div id="bottom-navigation">
+            <img class="down-arrow" onclick="callLoading()" src="img/down-arrow.svg" width="10%" align="center" />
+        </div>
+    </body>
+</html>

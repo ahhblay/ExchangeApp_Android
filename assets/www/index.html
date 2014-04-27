@@ -1,9 +1,21 @@
  <!DOCTYPE html>
- <html>
- <head>
- <title>Exchange</title>
- </head>
- <body>
- <h1>Welcome to Exchange</h1>
- </body>
- </html> 
+<html>
+    <head>
+        <title>Exchange</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript">
+            function callWelcome() {
+                window.location = "welcome.html";
+            }
+        </script>
+    </head>
+    <body>
+        <img src="img/loading.png" width="100%" />
+        <div id="button-container">
+            <button>Login</button><br />
+            <button>New</button><br />
+            <button class="skip" onclick="callWelcome()">Skip</button>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exchange</title>
+        <link rel="stylesheet" type="text/css" href="css/sendaccounts.css"/>
+        <script type="text/javascript">
+
+
+            function callWelcome() {
+                window.location = "welcome.html";
+            }
+        
+            function callGenerator() {
+                // QR code generator code 
+            }
+        
+        </script>
+        
+    </head>
+    <body>
+        <div id="top-navigation">
+            <img onclick="callWelcome()" src="img/back-arrow.svg" width="15%" />
+        </div>
+        
+        <div id="greeting">
+            <h1>What would you<br />
+                like to share?</h1>
+        </div>
+        
+        <div id="accounts">
+            <img id="phone" src="img/phone.svg" width="30%" />
+            <img id="email" src="img/email.svg" width="30%" />
+            <img id="website" src="img/website.svg" width="30%" /><br /><br />
+            <img id="location" src="img/location.svg" width="30%" />
+            <img id="facebook" src="img/facebook.svg" width="30%" />
+            <img id="twitter" src="img/twitter.svg" width="30%" />
+        </div>
+        
+        <div id="bottom-navigation">
+            <button onclick="callGenerator()">Generate</button>
+        </div>
+    </body>
+</html>
